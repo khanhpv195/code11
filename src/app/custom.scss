@@ -11,7 +11,10 @@ h1,h2,h3,p,li,a,td, span,div,body {font-family: 'Open Sans', sans-serif; line-he
 h1 {
   color: $color;
 }
-
+img
+{
+  max-width: 100%;
+}
 .nav {
   background: $header-bg;
   width: 100%;
@@ -68,6 +71,16 @@ footer {
   margin-left: 12%;
   margin-right: 4%;
 }
+.data
+{
+  margin-bottom: 1em;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom:1em;
+}
+.title>a
+{
+  text-decoration: none;
+}
 
 //mobile
 
@@ -75,5 +88,6 @@ footer {
 
 .search {width: 76% !important;}
 .content {margin-left: 0 !important}
+.title{margin-top:1em}
 }
 //end mobile

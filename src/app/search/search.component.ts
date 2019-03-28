@@ -16,11 +16,11 @@ export class SearchComponent implements OnInit {
   getKeySearch(event) {
 
     this.key = event.target.value;
-    this.messages = this.key
+    this.messages = this.key;
   }
 
   callSearch() {
-    console.log(this.messages)
+    console.log(this.messages);
   }
 
 }

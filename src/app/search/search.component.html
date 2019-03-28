@@ -1,10 +1,10 @@
 
-  <form class="form-search" >
+  <form class="form-search">
     <div class="input-group">
-      <input placeholder="Enter course name"  class="search" required=""  (keyup)="getKeySearch($event)" (ngModel)="key">
+      <input minlength="3" placeholder="Enter course name"  class="search" required=""  (keyup)="getKeySearch($event)" (ngModel)="key">
 
-      <button type="button" (click)="callSearch()" class=" btn-success"><i class="fas fa-search"></i></button>
+      <button type="button" (click)="callSearch()"  class="btn-success"><i class="fas fa-search"></i></button>
     </div>
   </form>
-  {{ key }}
+
 
