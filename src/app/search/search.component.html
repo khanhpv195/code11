@@ -1,9 +1,10 @@
 
-  <form class="form-search" action="" method="POST">
-
+  <form class="form-search" >
     <div class="input-group">
-      <input placeholder="Enter course name" type="text" class="search" name="txtSearch" id="autocomplete" required="" autocomplete="nope">
-      <button type="submit" class=" btn-success"><i class="fas fa-search"></i></button>
+      <input placeholder="Enter course name"  class="search" required=""  (keyup)="getKeySearch($event)" (ngModel)="key">
+
+      <button type="button" (click)="callSearch()" class=" btn-success"><i class="fas fa-search"></i></button>
     </div>
   </form>
+  {{ key }}
 

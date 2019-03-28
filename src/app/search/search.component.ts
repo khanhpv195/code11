@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  key: '';
+  messages: '';
 
   ngOnInit() {
+  }
+
+  getKeySearch(event) {
+
+    this.key = event.target.value;
+    this.messages = this.key
+  }
+
+  callSearch() {
+    console.log(this.messages)
   }
 
 }
