@@ -1,0 +1,79 @@
+$color: #fff;
+$header-bg: #007fff;
+$h1-font-size: 35px;
+$btn-success: #007fff;
+//reset
+
+
+h1,h2,h3,p,li,a,td, span,div,body {font-family: 'Open Sans', sans-serif; line-height: 25px}
+//end reset
+
+h1 {
+  color: $color;
+}
+
+.nav {
+  background: $header-bg;
+  width: 100%;
+  height: 6em;
+}
+
+.navbar-light .navbar-brand {
+  color: $color;
+  font-size: $h1-font-size;
+  font-weight: bold
+}
+
+footer {
+ display: flexbox;
+ flex: 1;
+ border-top: 1px solid #eee;
+ clear: both;
+ background-color: $btn-success;
+ color: $color;
+ vertical-align: inherit;
+ text-align: center;
+ font-size: 14px !important;
+ padding:2em;
+ margin-top:2em;
+}
+
+.search
+{
+  min-height: 50px;
+  width: 85%;
+  text-align: left;
+  padding: 1em;
+  color: $btn-success
+}
+
+.btn-success {
+  color: #fff;
+  background-color: $btn-success;
+  border-color: $btn-success;
+  border-radius: none !important;
+  width: 5em;
+  font-weight: bold;
+  vertical-align: inherit
+
+}
+
+.form-search
+{
+  margin-top: 2em;
+  margin-bottom: 4em
+}
+
+.content {
+  margin-left: 12%;
+  margin-right: 4%;
+}
+
+//mobile
+
+@media only screen and (max-width: 600px) {
+
+.search {width: 76% !important;}
+.content {margin-left: 0 !important}
+}
+//end mobile

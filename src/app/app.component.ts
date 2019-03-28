@@ -3,8 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./custom.scss'],
 })
 export class AppComponent {
-  title = 'angular';
+  title = 'Code11 - Học lập trình với mentor';
+
+
 }
