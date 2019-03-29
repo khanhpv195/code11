@@ -12,7 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { SearchComponent } from './search/search.component';
 import { from } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
-
+import { SearchService } from './search.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
