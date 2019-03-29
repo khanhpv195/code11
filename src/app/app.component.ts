@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Code11 - Học lập trình với mentor';
 
-
 }
