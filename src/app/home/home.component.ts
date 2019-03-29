@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   images: './../../images/7wOS20190328003612-1.jpg';
-
+  arrCourse = ['AngularJs','ReactJs','Laravel']
   constructor() { }
 
   ngOnInit() {

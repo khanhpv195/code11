@@ -1,10 +1,6 @@
-
-  <form class="form-search">
-    <div class="input-group">
-      <input minlength="3" placeholder="Enter course name"  class="search" ng-required='true'  (keyup)="getKeySearch($event)" (ngModel)="key">
-
-      <button type="button" (click)="callSearch()"  class="btn-success"><i class="fas fa-search"></i></button>
-    </div>
-  </form>
-
-
+<form class="form-search" (submit)="onSubmit(formSearch)" #formSearch="ngForm">
+  <div class="input-group">
+    <input  placeholder="Enter course name" name="keysearch" class="search"  [(ngModel)]="keysearch">
+    <button class="btn-success"><i class="fas fa-search"></i></button>
+  </div>
+</form>
